@@ -1,0 +1,36 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgressBar</title>
+    <style>
+        .progress {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="progress progress__bar"></div>
+  
+    <script src="progressBar.js"></script>
+    
+
+    <script>
+
+        const newBar = new RoundedProgressBar({
+            start: 0,
+            end: 100,
+            bg: 'red',
+            height: 15,
+            textColor: 'white',
+            border: '2px solid green',
+            rounded: '30px',
+            showText: false,
+        });
+
+        newBar.init('.progress__bar');
+
+    </script>
+</body>
+</html>
